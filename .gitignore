@@ -1,0 +1,25 @@
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated outputs are reproducible from data/ via `python run.py`;
+# keep a committed copy for convenience but don't fight over diffs on every run.
+# (Comment out the next lines if you'd rather always commit fresh outputs.)
+# outputs/charts/*.png

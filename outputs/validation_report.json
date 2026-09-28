@@ -1,0 +1,145 @@
+{
+  "method": "Fixed random sample (n=150, seed=42). The 12 tickets in KNOWN_MISCLASSIFICATIONS were AI-reviewed against raw ticket text (not an independent human review -- see 'reviewer_type' and 'limitation'); their true_category is fixed, but whether each currently counts as an error is recomputed every run against the live predicted_category. The other 138 sampled tickets were reviewed once and judged correct at that time; they are assumed correct here and are NOT re-reviewed.",
+  "sample_size": 150,
+  "random_seed": 42,
+  "taxonomy_version": "v1.0-2026-09",
+  "model": "rule_based_keyword_v1",
+  "reviewer_type": "AI-assisted first-pass (Claude, via Claude Code) -- not an independent human annotator or Vireo support agent",
+  "accuracy": 0.94,
+  "n_correct": 141,
+  "n_errors": 9,
+  "error_rate": 0.06,
+  "known_flagged_tickets_now_passing": [
+    "TK-241791",
+    "TK-245700",
+    "TK-247596"
+  ],
+  "per_category_sample_precision": {
+    "Delivery & Shipping": {
+      "n_predicted_in_sample": 37,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "Returns & Refunds": {
+      "n_predicted_in_sample": 21,
+      "n_errors": 2,
+      "sample_precision": 0.9048
+    },
+    "Billing & Payments": {
+      "n_predicted_in_sample": 18,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "Other": {
+      "n_predicted_in_sample": 16,
+      "n_errors": 6,
+      "sample_precision": 0.625
+    },
+    "Warranty & Repair": {
+      "n_predicted_in_sample": 13,
+      "n_errors": 1,
+      "sample_precision": 0.9231
+    },
+    "Charging & Battery": {
+      "n_predicted_in_sample": 11,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "Connectivity": {
+      "n_predicted_in_sample": 10,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "Product Enquiry": {
+      "n_predicted_in_sample": 10,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "Account & Login": {
+      "n_predicted_in_sample": 6,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "App & Firmware": {
+      "n_predicted_in_sample": 4,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    },
+    "Audio Quality": {
+      "n_predicted_in_sample": 4,
+      "n_errors": 0,
+      "sample_precision": 1.0
+    }
+  },
+  "failure_modes": {
+    "vocabulary gap (real category, unmatched phrasing)": 4,
+    "resolution/handling-note keyword outweighs stated symptom": 2,
+    "promotional discount/coupon dispute: no dedicated taxonomy category": 3
+  },
+  "errors_detail": [
+    {
+      "ticket_id": "TK-247411",
+      "predicted_category": "Other",
+      "true_category": "Warranty & Repair",
+      "bot_original_category": "Warranty & Repair",
+      "failure_mode": "no explicit warranty/damage keyword (broken part described only as 'strap pin came off')"
+    },
+    {
+      "ticket_id": "TK-247540",
+      "predicted_category": "Other",
+      "true_category": "Connectivity",
+      "bot_original_category": "Connectivity",
+      "failure_mode": "connectivity issue phrased without a pairing/bluetooth keyword ('keeps losing my phone')"
+    },
+    {
+      "ticket_id": "TK-240882",
+      "predicted_category": "Warranty & Repair",
+      "true_category": "Connectivity",
+      "bot_original_category": "Connectivity",
+      "failure_mode": "ticket mentions both a connectivity symptom and a DOA resolution; classifier keyed on the resolution ('doa'), not the stated symptom"
+    },
+    {
+      "ticket_id": "TK-252568",
+      "predicted_category": "Returns & Refunds",
+      "true_category": "Connectivity",
+      "bot_original_category": "Connectivity",
+      "failure_mode": "same pattern: resolution phrase ('reverse pkp') outweighed the stated pairing problem"
+    },
+    {
+      "ticket_id": "TK-251157",
+      "predicted_category": "Other",
+      "true_category": "Billing & Payments",
+      "bot_original_category": "Billing & Payments",
+      "failure_mode": "promotional-discount dispute; taxonomy/keyword set has no dedicated phrase for coupon/discount issues"
+    },
+    {
+      "ticket_id": "TK-245969",
+      "predicted_category": "Other",
+      "true_category": "App & Firmware",
+      "bot_original_category": "App & Firmware",
+      "failure_mode": "app-hang phrased as 'spinning circle' / 'Update hang' without the 'firmware' or 'update fail' keywords the rule set expects"
+    },
+    {
+      "ticket_id": "TK-242051",
+      "predicted_category": "Returns & Refunds",
+      "true_category": "Warranty & Repair",
+      "bot_original_category": "Delivery & Shipping",
+      "failure_mode": "transit-damage phrasing used 'a crack' (noun) rather than 'cracked' (the form the rule set matches)"
+    },
+    {
+      "ticket_id": "TK-244751",
+      "predicted_category": "Other",
+      "true_category": "Billing & Payments",
+      "bot_original_category": "Billing & Payments",
+      "failure_mode": "promotional-discount dispute, same taxonomy gap as TK-251157"
+    },
+    {
+      "ticket_id": "TK-241805",
+      "predicted_category": "Other",
+      "true_category": "Billing & Payments",
+      "bot_original_category": "Billing & Payments",
+      "failure_mode": "promotional-discount dispute, same taxonomy gap as TK-251157"
+    }
+  ],
+  "limitation": "This is an AI-reviewed first-pass agreement figure, not an independently audited accuracy figure: the true_category for each of the 12 originally-flagged tickets was assigned by the same AI assistant (Claude, via Claude Code) that built this pipeline, reading the raw ticket text -- not by an independent human annotator or a Vireo support agent. Separately, true_category is only stored for those 12 tickets; the other 138 in the sample are assumed correct from that same original review and are not re-checked here, so this function cannot by itself catch a NEW misclassification introduced among them by a future code change. A second, independent human read (ideally by a Tier-2 agent who knows the products), ideally of the full 150 rather than just the 12 flagged ones, is recommended before this number is used in a business decision. See docs/ai_usage.md and docs/methodology.md."
+}

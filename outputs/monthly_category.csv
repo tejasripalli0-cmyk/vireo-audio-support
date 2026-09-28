@@ -1,0 +1,211 @@
+month,predicted_category,ticket_count
+2024-06,Delivery & Shipping,3
+2024-07,Delivery & Shipping,13
+2024-08,Delivery & Shipping,14
+2024-09,Billing & Payments,1
+2024-09,Delivery & Shipping,25
+2024-10,Billing & Payments,2
+2024-10,Delivery & Shipping,23
+2024-10,Returns & Refunds,1
+2024-11,Billing & Payments,1
+2024-11,Delivery & Shipping,24
+2024-12,Billing & Payments,1
+2024-12,Delivery & Shipping,31
+2025-01,Account & Login,7
+2025-01,App & Firmware,18
+2025-01,Audio Quality,15
+2025-01,Billing & Payments,33
+2025-01,Charging & Battery,24
+2025-01,Connectivity,27
+2025-01,Delivery & Shipping,77
+2025-01,Other,42
+2025-01,Product Enquiry,14
+2025-01,Returns & Refunds,37
+2025-01,Warranty & Repair,20
+2025-02,Account & Login,19
+2025-02,App & Firmware,12
+2025-02,Audio Quality,10
+2025-02,Billing & Payments,43
+2025-02,Charging & Battery,26
+2025-02,Connectivity,16
+2025-02,Delivery & Shipping,95
+2025-02,Other,50
+2025-02,Product Enquiry,28
+2025-02,Returns & Refunds,41
+2025-02,Warranty & Repair,28
+2025-03,Account & Login,12
+2025-03,App & Firmware,26
+2025-03,Audio Quality,14
+2025-03,Billing & Payments,54
+2025-03,Charging & Battery,31
+2025-03,Connectivity,36
+2025-03,Delivery & Shipping,103
+2025-03,Other,64
+2025-03,Product Enquiry,28
+2025-03,Returns & Refunds,59
+2025-03,Warranty & Repair,35
+2025-04,Account & Login,11
+2025-04,App & Firmware,21
+2025-04,Audio Quality,12
+2025-04,Billing & Payments,56
+2025-04,Charging & Battery,37
+2025-04,Connectivity,32
+2025-04,Delivery & Shipping,113
+2025-04,Other,64
+2025-04,Product Enquiry,25
+2025-04,Returns & Refunds,54
+2025-04,Warranty & Repair,24
+2025-05,Account & Login,15
+2025-05,App & Firmware,23
+2025-05,Audio Quality,14
+2025-05,Billing & Payments,34
+2025-05,Charging & Battery,28
+2025-05,Connectivity,45
+2025-05,Delivery & Shipping,99
+2025-05,Other,54
+2025-05,Product Enquiry,19
+2025-05,Returns & Refunds,50
+2025-05,Warranty & Repair,43
+2025-06,Account & Login,18
+2025-06,App & Firmware,27
+2025-06,Audio Quality,13
+2025-06,Billing & Payments,53
+2025-06,Charging & Battery,21
+2025-06,Connectivity,32
+2025-06,Delivery & Shipping,109
+2025-06,Other,57
+2025-06,Product Enquiry,16
+2025-06,Returns & Refunds,64
+2025-06,Warranty & Repair,29
+2025-07,Account & Login,15
+2025-07,App & Firmware,35
+2025-07,Audio Quality,9
+2025-07,Billing & Payments,39
+2025-07,Charging & Battery,31
+2025-07,Connectivity,35
+2025-07,Delivery & Shipping,107
+2025-07,Other,72
+2025-07,Product Enquiry,23
+2025-07,Returns & Refunds,63
+2025-07,Warranty & Repair,33
+2025-08,Account & Login,26
+2025-08,App & Firmware,42
+2025-08,Audio Quality,24
+2025-08,Billing & Payments,85
+2025-08,Charging & Battery,54
+2025-08,Connectivity,51
+2025-08,Delivery & Shipping,158
+2025-08,Other,77
+2025-08,Product Enquiry,28
+2025-08,Returns & Refunds,94
+2025-08,Warranty & Repair,56
+2025-09,Account & Login,23
+2025-09,App & Firmware,47
+2025-09,Audio Quality,15
+2025-09,Billing & Payments,67
+2025-09,Charging & Battery,41
+2025-09,Connectivity,49
+2025-09,Delivery & Shipping,166
+2025-09,Other,89
+2025-09,Product Enquiry,46
+2025-09,Returns & Refunds,83
+2025-09,Warranty & Repair,45
+2025-10,Account & Login,24
+2025-10,App & Firmware,48
+2025-10,Audio Quality,29
+2025-10,Billing & Payments,103
+2025-10,Charging & Battery,43
+2025-10,Connectivity,51
+2025-10,Delivery & Shipping,202
+2025-10,Other,111
+2025-10,Product Enquiry,56
+2025-10,Returns & Refunds,111
+2025-10,Warranty & Repair,69
+2025-11,Account & Login,28
+2025-11,App & Firmware,44
+2025-11,Audio Quality,28
+2025-11,Billing & Payments,92
+2025-11,Charging & Battery,58
+2025-11,Connectivity,72
+2025-11,Delivery & Shipping,251
+2025-11,Other,132
+2025-11,Product Enquiry,66
+2025-11,Returns & Refunds,116
+2025-11,Warranty & Repair,65
+2025-12,Account & Login,30
+2025-12,App & Firmware,56
+2025-12,Audio Quality,34
+2025-12,Billing & Payments,66
+2025-12,Charging & Battery,70
+2025-12,Connectivity,77
+2025-12,Delivery & Shipping,198
+2025-12,Other,115
+2025-12,Product Enquiry,39
+2025-12,Returns & Refunds,106
+2025-12,Warranty & Repair,78
+2026-01,Account & Login,30
+2026-01,App & Firmware,38
+2026-01,Audio Quality,31
+2026-01,Billing & Payments,70
+2026-01,Charging & Battery,78
+2026-01,Connectivity,88
+2026-01,Delivery & Shipping,159
+2026-01,Other,117
+2026-01,Product Enquiry,50
+2026-01,Returns & Refunds,100
+2026-01,Warranty & Repair,51
+2026-02,Account & Login,30
+2026-02,App & Firmware,53
+2026-02,Audio Quality,28
+2026-02,Billing & Payments,71
+2026-02,Charging & Battery,52
+2026-02,Connectivity,72
+2026-02,Delivery & Shipping,163
+2026-02,Other,81
+2026-02,Product Enquiry,38
+2026-02,Returns & Refunds,89
+2026-02,Warranty & Repair,56
+2026-03,Account & Login,25
+2026-03,App & Firmware,42
+2026-03,Audio Quality,33
+2026-03,Billing & Payments,80
+2026-03,Charging & Battery,73
+2026-03,Connectivity,69
+2026-03,Delivery & Shipping,177
+2026-03,Other,88
+2026-03,Product Enquiry,34
+2026-03,Returns & Refunds,98
+2026-03,Warranty & Repair,61
+2026-04,Account & Login,29
+2026-04,App & Firmware,58
+2026-04,Audio Quality,29
+2026-04,Billing & Payments,78
+2026-04,Charging & Battery,74
+2026-04,Connectivity,83
+2026-04,Delivery & Shipping,173
+2026-04,Other,111
+2026-04,Product Enquiry,40
+2026-04,Returns & Refunds,82
+2026-04,Warranty & Repair,75
+2026-05,Account & Login,26
+2026-05,App & Firmware,48
+2026-05,Audio Quality,30
+2026-05,Billing & Payments,83
+2026-05,Charging & Battery,61
+2026-05,Connectivity,65
+2026-05,Delivery & Shipping,161
+2026-05,Other,85
+2026-05,Product Enquiry,37
+2026-05,Returns & Refunds,101
+2026-05,Warranty & Repair,59
+2026-06,Account & Login,34
+2026-06,App & Firmware,45
+2026-06,Audio Quality,37
+2026-06,Billing & Payments,66
+2026-06,Charging & Battery,72
+2026-06,Connectivity,73
+2026-06,Delivery & Shipping,138
+2026-06,Other,100
+2026-06,Product Enquiry,43
+2026-06,Returns & Refunds,102
+2026-06,Warranty & Repair,66

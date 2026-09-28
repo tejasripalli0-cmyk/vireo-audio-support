@@ -1,0 +1,143 @@
+{
+  "policy_reference": "support-policy.pdf \u00a73: automatic Rs 350 store credit on any missed first-response target",
+  "measured_vs_estimated": "breach rate and counts are MEASURED from tickets.csv timestamps; the Rs figures are ESTIMATED policy-based liability (breaches x Rs 350, annualized) -- NOT confirmed cash paid",
+  "data_window": "helpdesk-era tickets only (source_system=helpdesk), 2025-09-14 to 2026-06-30 (289 days)",
+  "overall_breach_rate": 0.1086,
+  "n_tickets_in_window": 7728,
+  "n_breached_in_window": 839,
+  "by_channel": [
+    {
+      "channel": "chat",
+      "n_tickets": 3513,
+      "breach_rate": 0.12097922003985198,
+      "n_breached": 425,
+      "target_minutes": 15
+    },
+    {
+      "channel": "email",
+      "n_tickets": 2354,
+      "breach_rate": 0.12404418011894647,
+      "n_breached": 292,
+      "target_minutes": 480
+    },
+    {
+      "channel": "social",
+      "n_tickets": 736,
+      "breach_rate": 0.08288043478260869,
+      "n_breached": 61,
+      "target_minutes": 240
+    },
+    {
+      "channel": "voice",
+      "n_tickets": 1125,
+      "breach_rate": 0.05422222222222222,
+      "n_breached": 61,
+      "target_minutes": 120
+    }
+  ],
+  "annualized_tickets": 9760.0,
+  "annualized_breaches": 1060.0,
+  "sla_breach_credit_inr": 350,
+  "current_annual_liability_inr": 370873.0,
+  "current_quarterly_liability_inr": 92718.0,
+  "scenarios": {
+    "current_rate": 0.1086,
+    "scenario_halve_breach_rate": {
+      "label": "ILLUSTRATIVE SCENARIO ONLY -- not a measured outcome, not a prediction, not a client-stated target",
+      "current_rate": 0.1086,
+      "target_rate": 0.0543,
+      "annualized_tickets": 9760.0,
+      "breaches_avoided_per_year": 530.0,
+      "annual_savings_inr": 185500.0,
+      "quarterly_savings_inr": 46375.0
+    },
+    "assumption": "No Vireo-stated SLA target exists in the supplied materials, so a halved (relative) breach rate is shown as an illustrative, achievable-looking target -- NOT a number from the data. The current rate and current liability above ARE measured directly from tickets.csv and are the figures we'd stand behind without qualification."
+  },
+  "category_tag_audit": {
+    "overall_tag_change_rate": 0.3956,
+    "category_delta_table": [
+      {
+        "category": "Account & Login",
+        "bot_tagged_count": 391,
+        "reclassified_count": 402,
+        "delta": 11,
+        "pct_change": 2.8
+      },
+      {
+        "category": "App & Firmware",
+        "bot_tagged_count": 699,
+        "reclassified_count": 683,
+        "delta": -16,
+        "pct_change": -2.3
+      },
+      {
+        "category": "Audio Quality",
+        "bot_tagged_count": 591,
+        "reclassified_count": 405,
+        "delta": -186,
+        "pct_change": -31.5
+      },
+      {
+        "category": "Billing & Payments",
+        "bot_tagged_count": 2564,
+        "reclassified_count": 1178,
+        "delta": -1386,
+        "pct_change": -54.1
+      },
+      {
+        "category": "Charging & Battery",
+        "bot_tagged_count": 820,
+        "reclassified_count": 874,
+        "delta": 54,
+        "pct_change": 6.6
+      },
+      {
+        "category": "Connectivity",
+        "bot_tagged_count": 1002,
+        "reclassified_count": 973,
+        "delta": -29,
+        "pct_change": -2.9
+      },
+      {
+        "category": "Delivery & Shipping",
+        "bot_tagged_count": 1905,
+        "reclassified_count": 2782,
+        "delta": 877,
+        "pct_change": 46.0
+      },
+      {
+        "category": "Other",
+        "bot_tagged_count": 1622,
+        "reclassified_count": 1509,
+        "delta": -113,
+        "pct_change": -7.0
+      },
+      {
+        "category": "Product Enquiry",
+        "bot_tagged_count": 612,
+        "reclassified_count": 630,
+        "delta": 18,
+        "pct_change": 2.9
+      },
+      {
+        "category": "Returns & Refunds",
+        "bot_tagged_count": 1049,
+        "reclassified_count": 1451,
+        "delta": 402,
+        "pct_change": 38.3
+      },
+      {
+        "category": "Warranty & Repair",
+        "bot_tagged_count": 525,
+        "reclassified_count": 893,
+        "delta": 368,
+        "pct_change": 70.1
+      }
+    ],
+    "billing_tagged_total": 2564,
+    "billing_confirmed_billing": 898,
+    "billing_reclassified_to_other_category": 1666,
+    "billing_reclassified_to_delivery_specifically": 1049,
+    "billing_reclassified_pct": 65.0
+  }
+}
